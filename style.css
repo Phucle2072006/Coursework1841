@@ -1,0 +1,89 @@
+/* 1. NỀN WEB VÀ MÀU CHỮ TỔNG THỂ */
+body { 
+    font-family: 'Inter', 'Segoe UI', sans-serif; 
+    background-color: #0f172a; /* Nền xanh Navy tối sâu */
+    color: #e2e8f0; 
+    margin: 0;
+}
+
+/* 2. OVERRIDE BOOTSTRAP - QUAN TRỌNG ĐỂ HẾT TRẮNG */
+/* Nhuộm đen tất cả các Card của Bootstrap */
+.card, .bg-dark-custom {
+    background-color: #1e293b !important; 
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+}
+
+/* Làm cho các ô nhập liệu (Input/Select) trông xịn hơn */
+.form-control, .form-select {
+    background-color: #0f172a !important;
+    border: 1px solid #334155 !important;
+    color: #ffffff !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25) !important;
+}
+
+/* 3. HEADER & MENU (Giữ nguyên phong cách của bạn) */
+.navbar {
+    background-color: #0f172a !important;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #38bdf8 !important;
+}
+
+/* 4. KHỐI NỘI DUNG (MAIN) */
+/* Tôi chỉnh lại để nó linh hoạt hơn với Bootstrap container */
+main { 
+    min-height: 70vh; 
+    padding: 40px 0;
+}
+
+/* 5. HIỆU ỨNG NEON */
+.text-neon { 
+    color: #00f2ff !important; 
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); 
+}
+
+.btn-primary {
+    background-color: #38bdf8 !important;
+    border: none !important;
+    color: #0f172a !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 14px 0 rgba(56, 189, 248, 0.39);
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9 !important;
+    transform: translateY(-1px);
+}
+
+/* 6. TABLE TRANG MANAGE FILMS/AUTHORS */
+.table {
+    --bs-table-bg: transparent;
+    color: #f8fafc;
+}
+
+.table-dark-custom {
+    background-color: #1e293b;
+    border-radius: 12px;
+}
+
+/* 7. FOOTER */
+footer { 
+    padding: 2em; 
+    background-color: #0f172a; 
+    color: #64748b; 
+    text-align: center; 
+    border-top: 1px solid #334155;
+}
